@@ -1,0 +1,19 @@
+<h1>Listar Heroes</h1>
+
+<ul>
+  <li *ngFor="let r of heroes; let i = index" (click)="deletar(i)"> {{r}} </li>
+</ul>
+
+<div *ngIf="heroesDel.length > 0; else noHero">
+  <h2>Heroes deleted</h2>
+  <li *ngFor="let d of heroesDel; let i = index"> {{d}} </li>
+</div>
+
+<ng-template #noHero>
+  <small>Nenhum hero excluido.</small>
+</ng-template>
+
+
+<br/>
+<br/>
+<button (click)="add()">Add</button>
