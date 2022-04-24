@@ -1,0 +1,7 @@
+<h3>Add</h3>
+<hr/>
+<form [formGroup]="formPersonagem">
+  <input type="text" formControlName="name" placeholder="Personagem" />
+  <input type="number" formControlName="poder" placeholder="Poder" />
+  <button [disabled]="formPersonagem.invalid" (click)="add()">Add</button>
+</form>

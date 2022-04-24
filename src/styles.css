@@ -38,3 +38,32 @@ button:focus{
 .p-1 {
   padding: 1px;
 }
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+input {
+  display: block;
+  margin: 5px;
+  color: black;
+  height: 30px;
+  width: 95%;
+  outline: none;
+  border: none;
+  padding: 5px;
+}
+
+button {
+  height: 30px;
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+  outline: none;
+  border: none;
+}

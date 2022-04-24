@@ -1,0 +1,7 @@
+<h3>Personagens</h3>
+<hr />
+<ul>
+  <li *ngFor="let p of personagens; let i = index" (click)="removePersonagem(i)">
+    {{ p.name }} => {{ p.poder | number }}>
+  </li>
+</ul>

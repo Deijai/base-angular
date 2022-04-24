@@ -1,0 +1,17 @@
+<h1>Dragon Ball</h1>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <app-personages
+      [personagens]="ps"
+      (emitterPersonagem)="receberEmitterPersonagem($event)"
+    ></app-personages>
+  </div>
+
+  <div class="col">
+    <app-add-personagem
+      (emitterPersonagem)="receberEmitter($event)"
+    ></app-add-personagem>
+  </div>
+</div>
